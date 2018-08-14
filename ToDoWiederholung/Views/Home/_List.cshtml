@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<ul id="clicked" class="list-group">
+    @foreach (ToDos item in Model)
+    {
+        <li class="list-group-item" data-pladi-id="@item.Id">
+            <p class="titleP">@item.Title</p>
+            <p class="notesP">@item.Notes</p>
+        </li>
+    }
+</ul>
